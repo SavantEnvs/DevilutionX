@@ -1,0 +1,8 @@
+project: savantenvs/DevilutionX
+target: fuzz_dvlnet_frame_queue
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/build-fuzz/fuzz_dvlnet_frame_queue
+    libfuzzer: true
+    timeout: 5

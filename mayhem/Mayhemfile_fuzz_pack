@@ -1,0 +1,8 @@
+project: savantenvs/DevilutionX
+target: fuzz_pack
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/build-fuzz/fuzz_pack
+    libfuzzer: true
+    timeout: 5

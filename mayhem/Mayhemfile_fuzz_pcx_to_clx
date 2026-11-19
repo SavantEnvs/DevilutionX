@@ -1,0 +1,9 @@
+project: savantenvs/DevilutionX
+target: fuzz_pcx_to_clx
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_pcx_to_clx/testsuite
+cmds:
+  - cmd: /mayhem/build-fuzz/fuzz_pcx_to_clx
+    libfuzzer: true
+    timeout: 5
